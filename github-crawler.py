@@ -66,7 +66,7 @@ class GithubCrawler(Spider):
 
     def parse_repository_data(self, response, url_repo):
         """
-        If the argument type is Repositories, this function attach data from each repository
+        If the argument type is Repositories, this function attach data from eac repository
         """
         owner = response.css('a[rel=author]::text').get()
         language_stats_selector = '.repository-lang-stats-numbers li'
